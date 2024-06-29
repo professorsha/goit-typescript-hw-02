@@ -1,0 +1,22 @@
+.container{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    
+}
+.img{
+    position: relative;
+
+}
+.likes{
+    color: azure;
+    position: relative;
+    top:10px;
+    left:-20px;
+}
+.closeBtn{
+    position: relative;
+    background-color: blue;
+    top: 0px;
+    left: -100px;
+}
