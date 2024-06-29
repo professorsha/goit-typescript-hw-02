@@ -9,5 +9,5 @@ export interface ImageItem {
   }
 export interface ImageGalleryProps{
     items: ImageItem[];
-    onClick:(id:string)=>void;
+    onClick:(id:string, likes:number)=>void;
 }

@@ -1,11 +1,22 @@
-.galery{
+.imageGallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    /* justify-content:space-between; */
-    gap:2px;
-    list-style: none;
-}
-.galeryItem{
-    border: 1px solid gray;
-    width: calc((100% - 6px)/4);
-}
+    gap: 16px;
+  }
+  
+  .imageGallery li .imageCard {
+    width: 200px;
+  }
+  
+  .imageGallery li .imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .imageGallery li .imageCard p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+  }

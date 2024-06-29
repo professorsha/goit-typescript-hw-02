@@ -7,7 +7,7 @@ export type ImageResult = {
   id: string;
   description: string | null;
   alt_description: string | null;
-  likts:number;
+  likes:number;
   urls: {
     regular: string;
     small: string;

@@ -11,16 +11,8 @@ const ImageCard: React.FC<ImageCardProps> = ({
     onClick(imgUrlBig, imgLikes);
   };
   return (
-    <div onClick={handleClick}>
-      {/* <p>likes:{item.likes}</p>
-              <p>description:{item.description}</p>
-              <span>url for modal: {item.urls.regular}</span> */}
-      <img
-        className={css.galeryImg}
-        src={imgUrl}
-        height="300px"
-        alt={imgDescr}
-      ></img>
+    <div onClick={handleClick} className={css.imageCard}>
+      <img src={imgUrl} alt={imgDescr}></img>
     </div>
   );
 };

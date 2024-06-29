@@ -23,7 +23,10 @@ export default function App() {
       try {
         setIsLoading(true);
         const data = await getImages(searchQuery, page);
-        setImages((prevState) => [...prevState, ...data]);
+        setImages((prevImages) => [
+          ...prevImages,
+          ...data.map(convertToImageItem),
+        ]);
       } catch (error) {
         setIsError(true);
       } finally {
@@ -56,6 +59,7 @@ export default function App() {
     id: result.id,
     urls: result.urls,
     slug: result.id,
+    likes:result.likes,
   });
   return (
     <div>
