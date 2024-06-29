@@ -19,7 +19,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
     }
   };
   return (
-    <header>
+    <header className={css.header}>
       <Formik initialValues={{ query: '' }} onSubmit={onSubmit}>
         <Form className={css.form}>
           <Field
